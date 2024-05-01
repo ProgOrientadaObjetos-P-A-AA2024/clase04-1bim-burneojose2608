@@ -5,6 +5,7 @@
  */
 package paquete1;
 
+
 public class Ejecutable {
     public static void main(String[] args) {
         // Se crea un objeto
