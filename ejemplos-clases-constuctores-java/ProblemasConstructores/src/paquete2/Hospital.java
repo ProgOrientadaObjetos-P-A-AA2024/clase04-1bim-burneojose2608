@@ -10,63 +10,74 @@ package paquete2;
  * @author reroes
  */
 public class Hospital {
+
     private String nombre;
     private String ciudad;
     private int numeroDoctores;
     private int numeroEnfermeros;
-    
+
     /*
         Crear un constructor que reciba como parámetros
         valores que serán asignados a los atributos.
     
-    */
-    
-    
-    public Hospital(){
+     */
+    public Hospital() {
         nombre = "na";
         ciudad = "ciu";
         numeroDoctores = 100;
         numeroEnfermeros = 400;
     }
-    
-        
-    public void establecerNombre(String n){
-        nombre = n;
+
+    public Hospital(String nombre, String  ciudad, int numeroDoctores,
+            int numeroEnfermeros) {
     }
-    
-    public void establecerCiudad(String n){
-        ciudad = n;
-    }
-    
-    public void establecerNumeroDoctores(int n){
+
+    public Hospital(int n) {
         numeroDoctores = n;
     }
-    
-    public void establecerNumeroEnfermeros(int n){
+
+    public Hospital(int m, int n) {
+        numeroEnfermeros = m;
+        numeroDoctores = n;
+    }
+
+    public void establecerNombre(String n) {
+        nombre = n;
+    }
+
+    public void establecerCiudad(String n) {
+        ciudad = n;
+    }
+
+    public void establecerNumeroDoctores(int n) {
+        numeroDoctores = n;
+    }
+
+    public void establecerNumeroEnfermeros(int n) {
         numeroEnfermeros = n;
     }
-    
-    public String obtenerNombre(){
+
+    public String obtenerNombre() {
         return nombre;
     }
-    
-    public String obtenerCiudad(){
+
+    public String obtenerCiudad() {
         return ciudad;
     }
-    
-    public int obtenerNumeroDoctores(){
+
+    public int obtenerNumeroDoctores() {
         return numeroDoctores;
     }
-    
-    public int obtenerNumeroEnfermeros(){
+
+    public int obtenerNumeroEnfermeros() {
         return numeroEnfermeros;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         // String cadena = String.format("%s \n", nombre);
         String cadena = String.format("%s \n", obtenerNombre());
         return cadena;
     }
-    
+
 }
